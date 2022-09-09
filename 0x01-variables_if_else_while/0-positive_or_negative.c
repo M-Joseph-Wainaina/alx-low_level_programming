@@ -22,9 +22,9 @@ int main(void)
 	{
 		printf("%d is positive\n", n);
 	}
-	else if (n == 0)
+	else
 	{
-		printf("%d id zero\n", n);
+		printf("%d is zero\n", n);
 	}
 	return (0);
 }
