@@ -2,7 +2,7 @@
 
 /**
  * _islower - checks for lowercase
- * @parameterc: integer value from main
+ * @c: integer value from main
  *
  * Return: 1 for lower, 0 otherwise
  */
