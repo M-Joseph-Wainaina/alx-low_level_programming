@@ -4,7 +4,7 @@
  * _isalpha - determines whether inputs alphabetic
  * @c: variable declared in main
  *
- * Return: 1 for alphabetic and 0 for otherwise 
+ * Return: 1 for alphabetic and 0 for otherwise
  */
 int _isalpha(int c)
 {
@@ -12,7 +12,6 @@ int _isalpha(int c)
 		return (1);
 	else if (c >= 65 && c <= 90)
 		return (1);
-	else 
+	else
 		return (0);
 }
-
