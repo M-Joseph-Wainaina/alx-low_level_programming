@@ -8,7 +8,7 @@
  */
 void print_to_98(int n)
 {
-	if (n > 98);
+	if (n > 98)
 	{
 		do {
 			print(n);
@@ -17,8 +17,7 @@ void print_to_98(int n)
 	}
 	else
 	{
-		do
-		{
+		do {
 			print(n);
 			n++;
 		} while (n <= 98);
@@ -33,10 +32,10 @@ void print(int n)
 {
 	int i;
 
-	for (i = 10; i < (0/1); i * 10)
+	for (i = 10; i < (0 / 1); i * 10)
 	{
 		_putchar((n % 10) + '0');
-		if(n % i == n)
+		if (n % i == n)
 			continue;
 		_putchar((n % 10) + '0');
 		if (i >= 100)
@@ -44,5 +43,4 @@ void print(int n)
 		_putchar((n / i) + '0');
 		}
 	}
-
 }
