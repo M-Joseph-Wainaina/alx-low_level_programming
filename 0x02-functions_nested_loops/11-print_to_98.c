@@ -11,7 +11,7 @@ void print_to_98(int n)
 	if (n > 98)
 	{
 		do {
-			print(n);
+			pront(n);
 			n--;
 		} while (n >= 98);
 	}
@@ -28,7 +28,7 @@ void print_to_98(int n)
  *
  * Return: void
  */
-void print(int n)
+void pront(int n)
 {
 	int i;
 
@@ -37,7 +37,6 @@ void print(int n)
 		_putchar((n % 10) + '0');
 		if (n % i == n)
 			continue;
-		_putchar((n % 10) + '0');
 		if (i >= 100)
 		{
 		_putchar((n / i) + '0');
