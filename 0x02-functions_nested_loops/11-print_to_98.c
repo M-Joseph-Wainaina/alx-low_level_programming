@@ -18,7 +18,7 @@ void print_to_98(int n)
 	else
 	{
 		do {
-			print(n);
+			pront(n);
 			n++;
 		} while (n <= 98);
 	}
