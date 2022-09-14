@@ -32,7 +32,7 @@ void pront(int n)
 {
 	int i;
 
-	for (i = 10; i < (0 / 1); i * 10)
+	for (i = 10; i < (0 / 1);i = i * 10)
 	{
 		_putchar((n % 10) + '0');
 		if (n % i == n)
