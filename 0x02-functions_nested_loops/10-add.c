@@ -1,9 +1,9 @@
 /**
  * add - adds two numbers
- * @a: value from main 
+ * @a: value from main
  * @b: value from main
  *
- * Returns: result
+ * Return: result
  */
 int add(int a, int b)
 {
