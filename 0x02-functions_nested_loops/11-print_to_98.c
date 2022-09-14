@@ -26,9 +26,9 @@ void print_to_98(int n)
  * print - prints n
  * @n: value to be printed
  *
- * Return: void
+ * Return: always 0
  */
-void pront(int n)
+int pront(int n)
 {
 	int i;
 
@@ -42,4 +42,5 @@ void pront(int n)
 		_putchar((n / i) + '0');
 		}
 	}
+	return (0)
 }
