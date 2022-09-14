@@ -14,7 +14,7 @@ void times_table(void)
 	{
 		for (c = 0; c <= 9; c++)
 		{
-			if ((r * c) >= 10)
+			if ((r * c) > 9)
 			{
 			_putchar(((r * c) / 10) + '0');
 			_putchar(((r * c) % 10) + '0');
