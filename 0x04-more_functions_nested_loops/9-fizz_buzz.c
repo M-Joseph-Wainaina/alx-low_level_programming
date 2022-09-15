@@ -6,10 +6,10 @@
  * buzz for multiples of 5 and
  * fizzbuzz for '' of 3 and 5
  *
- *Return: void
+ *Return: 0
  */
 
-void main(void)
+int main(void)
 {
 	int i, j, k;
 
@@ -50,5 +50,5 @@ void main(void)
 		}
 	}
 	printf("\n");
-
+	return (0);
 }
