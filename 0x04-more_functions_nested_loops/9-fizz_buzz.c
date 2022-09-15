@@ -17,18 +17,18 @@ int main(void)
 	{
 
 		j = i % 3;
-        	k = i % 5;
+		k  = i % 5;
 
-		if(j == 0 && k != 0)
+		if (j == 0 && k != 0)
 		{
 			printf("Fizz ");
 			continue;
 		}
 		else if (i == 100)
-                {
-                        printf("Buzz");
-                        continue;
-                }
+		{
+			printf("Buzz");
+			continue;
+		}
 		else if (k == 0 && j != 0)
 		{
 			printf("Buzz ");
