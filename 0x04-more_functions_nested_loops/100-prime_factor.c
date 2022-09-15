@@ -5,7 +5,7 @@
  * Return: 0
  */
 
-int main()
+int main(void)
 {
 	long int p, n;
 
@@ -22,7 +22,7 @@ int main()
 		}
 
 	}
-
+	p--;
 	printf("%ld\n", p);
 	return (0);
 }
