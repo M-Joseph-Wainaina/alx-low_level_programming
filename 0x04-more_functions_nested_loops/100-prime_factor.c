@@ -7,7 +7,7 @@
 
 int main()
 {
-	long long int p, n;
+	long int p, n;
 
 	n = 612852475143;
 
@@ -23,6 +23,6 @@ int main()
 
 	}
 
-	printf("%lld\n", p);
+	printf("%ld\n", p);
 	return (0);
 }
