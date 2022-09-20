@@ -1,28 +1,35 @@
-#include "main.h"
+#include "mainn.h"
 
 /**
- * puts_half - prints half of the string
- *@str: string being tested
- *
- */
-
+  * puts_half - Prints half of a string
+  * @str: The string to print
+  *
+  * Return: void
+  */
 void puts_half(char *str)
 {
-	int ct, even, neg;
+	int j = 0;
+	int k;
 
-	for (ct = 0; str[ct] != '\0'; ct++);
-
-	if ((ct % 2) == 0)
+	while (str[j] != '\0')
 	{
-		for (even = ct / 2; even <= ct; even++)
-		{
-			_putchar(str[even]);
-		}
+		j++;
+	}
+
+	if (j % 2 == 1)
+	{
+		k = (j - 1) / 2;
+		k += 1;
 	}
 	else
 	{
-		for (neg = (ct - 1) / 2; neg <= ct; neg++)
-			_putchar(str[neg + 1]);
+		k = j / 2;
 	}
+
+	for (; k < j; k++)
+	{
+		_putchar(str[k]);
+	}
+
 	_putchar('\n');
 }
