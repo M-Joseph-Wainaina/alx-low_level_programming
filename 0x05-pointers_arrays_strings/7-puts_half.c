@@ -10,16 +10,18 @@ void puts_half(char *str)
 {
 	int ct, even, neg;
 
-	for (ct = 0; str[ct] != '\0'; ct++)
-		;
+	for (ct = 0; str[ct] != '\0'; ct++);
+
 	if ((ct % 2) == 0)
 	{
-		for (even = ct / 2; str[even] != '\0'; even++)
+		for (even = ct / 2; even <= ct; even++)
+		{
 			_putchar(str[even]);
+		}
 	}
 	else
 	{
-		for (neg = (ct - 1) / 2; str[neg] != '\0'; neg++)
+		for (neg = (ct - 1) / 2; neg <= ct; neg++)
 			_putchar(str[neg + 1]);
 	}
 	_putchar('\n');
