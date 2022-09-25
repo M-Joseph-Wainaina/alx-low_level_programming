@@ -6,11 +6,12 @@
  * Return: void
  */
 
+int _pow(int, int);
 void print_number(int n)
 {
 	int a, b, c, d, e;
 	
-	if (n < 0);
+	if (n < 0)
 	{
 		n = -n;
 		_putchar('-');
