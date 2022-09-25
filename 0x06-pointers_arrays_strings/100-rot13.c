@@ -8,26 +8,41 @@
 
 char *rot13(char *str)
 {
-	char a_m[] = "abcdefghijklm";
-	char n_z[] = "nopqrstuvwxyz";
+	char a_z[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	int len, a, b;
 
 	for (len = 0; str[len] != '\0'; len++)
 	{
+		if(
+			for  (b = 0; b < 26; b++)
+			{
+				str[len] = str[len] + 13	
+			}
 	}
+
+/**
+	for (len = 0; str[len] != '\0'; len++)
+	{
+	}
+	printf("%d\n", len); 
 	for (a = 0; a < len; a++)
 	{
-		for (b = 0; b <= 13; b++)
+		for (b = 0; b < 27; b++)
 		{
-			if (str[a] == a_m[b] || str[a] == (a_m[b] - 32))
+		if (str[a] == a_z[b])
 			{
-				str[a] = str[a] + 13;
-			}
-			else if (str[a] == n_z[b] || str[a] == (n_z[b] - 32))
-			{
-				str[a] = str[a] - 13;
+				while (b < 14 && b > 0 || b > 26 && b < 40 ){
+					str[a] = str[a] + 13;
+					break;
+				}
+				while (b > 13 && b < 27 || b > 40 && b < 53){
+					str[a] = str[a] - 13;
+					break;
+				}
 			}
 		}
 	}
+	
 	return (str);
-}
+*/
+	}
