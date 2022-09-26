@@ -22,7 +22,7 @@ unsigned int _strspn(char *s, char *accept)
 	{
 		c++;
 	}
-	
+
 	e = 0;
 	for (b = 0; b < a; b++)
 	{
