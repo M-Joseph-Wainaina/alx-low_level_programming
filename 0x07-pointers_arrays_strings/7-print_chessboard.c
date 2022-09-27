@@ -22,7 +22,7 @@ void print_chessboard(char (*a)[8])
 		}
 		c = 0;
 		b++;
-		_putchar("\n");
+		_putchar('\n');
 
 	}
 }
