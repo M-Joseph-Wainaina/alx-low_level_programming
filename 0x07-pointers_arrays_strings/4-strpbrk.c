@@ -30,14 +30,14 @@ char *_strpbrk(char *s, char *accept)
 	{
 		for (d = 0; d < b; d++)
 		{
-			if (accept[c] == s[d])
+			if (accept[d] == s[c])
 			{
 				return (s + e);
 			}
 		}
 		e++;
 	}
-	return (s);
+	return ('\0');
 }
 
 
