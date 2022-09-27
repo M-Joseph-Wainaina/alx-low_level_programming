@@ -24,7 +24,7 @@ char *_strpbrk(char *s, char *accept)
 
 	c = 0;
 	d = 0;
-	e = 1;
+	e = 0;
 
 	for (; c < a; c++)
 	{
@@ -32,7 +32,12 @@ char *_strpbrk(char *s, char *accept)
 		{
 			if (accept[d] == s[c])
 			{
-				return (s + e);
+				if (s > 0)
+				{
+					e++;
+					return (s + e);
+				}
+				return (s);
 			}
 		}
 		e++;
