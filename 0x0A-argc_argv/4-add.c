@@ -15,6 +15,8 @@ int main(int argc, char *argv[])
 	if (argc == 1)
 	{
 		printf("0\n");
+		return (0);
+	}
 
 	/* checks for nongits */
 	for (a = 1; a < argc; a++)
@@ -45,7 +47,6 @@ int main(int argc, char *argv[])
 
 int _checks(char *s)
 {
-
 	if (*s == '\0')
 	{
 		return (0);
@@ -55,4 +56,5 @@ int _checks(char *s)
 		return (1);
 	}
 	_checks(s + 1);
+	return (0);
 }
