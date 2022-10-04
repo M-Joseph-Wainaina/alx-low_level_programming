@@ -40,7 +40,8 @@ char *str_concat(char *s1, char *s2)
 	}
 	d = 0;
 	for (c = 0; c <= len; c++)
-	{	if (c >= a)
+	{
+		if (c >= a)
 		{
 			p[c] = s2[d];
 			d++;
