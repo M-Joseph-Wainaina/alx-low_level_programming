@@ -12,10 +12,15 @@ char *str_concat(char *s1, char *s2)
 	int a, b, c, d, len;
 	char *p;
 
-	if (s1 == NULL || s2 == NULL)
+	if (s1 == NULL)
 	{
-		return (NULL);
+		s1 = "";
 	}
+	if (s2 == NULL)
+	{
+		s2 = "";
+	}
+
 	a = 0;
 	b = 0;
 
@@ -28,7 +33,6 @@ char *str_concat(char *s1, char *s2)
 		b++;
 	}
 	len = a + b;
-	printf("%d\n", len);
 	p = malloc(sizeof(char) * (len + 1));
 	if (p == NULL)
 	{
