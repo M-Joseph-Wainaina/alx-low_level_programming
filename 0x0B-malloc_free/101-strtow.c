@@ -31,6 +31,11 @@ char **strtow(char *str)
 			w += 1;
 		}
 	}
+	if (w == 0)
+	{
+		return (NULL);
+	}
+
 	p = malloc(sizeof(char *) * (w + 1));
 	if (p == NULL)
 	{
@@ -40,7 +45,7 @@ char **strtow(char *str)
 	b = 0;
 	for (a = 0; a < len - 1; a++)
 	{
-		if (!(str[a] == ' ') && str[a - 1] == ' ')
+		if (!(str[a] == ' ') && (str[a - 1] == ' ' || a == 0))
 		{
 			d = word_len(str + a);
 			p[b] = malloc(sizeof(char) * d);
