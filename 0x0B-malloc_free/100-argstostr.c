@@ -12,7 +12,6 @@ char *argstostr(int ac, char **av)
 	int a, b, c, len;
 	char *p;
 
-	if (
 	len = 0;
 	for (a = 0; a < ac; a++)
 	{
