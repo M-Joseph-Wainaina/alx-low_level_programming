@@ -31,7 +31,6 @@ char **strtow(char *str)
 			w += 1;
 		}
 	}
-	printf("%d\n", w);
 	p = malloc(sizeof(char *) * (w + 1));
 	if (p == NULL)
 	{
@@ -44,7 +43,6 @@ char **strtow(char *str)
 		if (!(str[a] == ' ') && str[a - 1] == ' ')
 		{
 			d = word_len(str + a);
-			printf("%d\n", d);
 			p[b] = malloc(sizeof(char) * d);
 			for (x = 0; x < d; x++)
 			{
