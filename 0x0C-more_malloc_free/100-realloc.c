@@ -4,6 +4,7 @@
  * _realloc - reallocates memmory block using malloc and free
  * @old_size: size of original block
  * @new_size: size of new block
+ * @ptr: contents in old mem
  * Return: pointer to new mem
  */
 
@@ -22,7 +23,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	if (p == NULL)
 		return (NULL);
 	if (ptr == NULL)
-	{	
+	{
 		free(ptr);
 	}
 	else
@@ -30,9 +31,9 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		for (a = 0; a < old_size; a++)
 		{
 			p[a] = pt[a];
-		}	
+		}
 		free(ptr);
 	}
 	return (p);
-}	
+}
 
