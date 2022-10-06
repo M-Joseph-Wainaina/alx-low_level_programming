@@ -23,19 +23,18 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		len2++;
 	}
-	if (n > len2)
+	if (n >= len2)
 	{
 		n = len2;
 	}
-	p = malloc(sizeof(char) * len1);
-	for (a = 0; a < len1; a++)
-	{
-		p[a] = s1[a];
-	}
-	p = realloc(p, n);
+	p = malloc(sizeof(char) * (len1 + n));
 	if (p == NULL)
 	{
 		return (NULL);
+	}
+	for (a = 0; a < len1; a++)
+	{
+		p[a] = s1[a];
 	}
 	for (a = 0; a < n; a++)
 	{
