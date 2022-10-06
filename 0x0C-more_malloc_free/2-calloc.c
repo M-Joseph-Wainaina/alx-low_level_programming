@@ -6,18 +6,20 @@
  * @size: size in bytes
  * Return: void pointer
  */
- 
+
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *p;
 	unsigned int a;
+	int l;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
-	p = malloc(nmemb * size);
+	l = nmemb * size;
+	p = malloc(l);
 	if (p == NULL)
 		return (NULL);
-	for (a = 1; a < nmemb; a++)
+	for (a = 0; a < nmemb; a++)
 	{
 		p[a] = 0;
 	}
