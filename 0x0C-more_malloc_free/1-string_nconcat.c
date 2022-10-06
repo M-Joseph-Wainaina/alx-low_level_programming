@@ -11,16 +11,24 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *p;
-	unsigned int a, len;
+	unsigned int a, len1, len2;
 
-	len = 0;
-	while(s1[len])
+	len1 = 0;
+	while(s1[len1])
 	{
 		len++;
 	}
-
+	len2 = 0;
+	while (s2[len2])
+	{
+		len2++;
+	}
+	if (n > len2)
+	{
+		n = len2;
+	}
 	p = malloc(sizeof(char) * len);
-	for (a = 0; a < len; a++)
+	for (a = 0; a < len1; a++)
 	{
 		p[a] = s1[a];
 	}
