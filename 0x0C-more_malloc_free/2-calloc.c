@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _calloc: allocates memmory for an array
+ * _calloc - allocates memmory for an array
  * @nmemb: number of elements
  * @size: size in bytes
  * Return: void pointer
@@ -19,8 +19,10 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	p = malloc(l);
 	if (p == NULL)
 		return (NULL);
-	while (i < l)									{
+	while (i < l)
+	{
 		p[i] = 0;
-		i++;									}
+		i++;
+	}
 	return (p);
 }
