@@ -12,13 +12,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *p;
 	unsigned int a, len1, len2;
-	
+
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
 	len1 = 0;
-	while(s1[len1])
+	while (s1[len1])
 	{
 		len1++;
 	}
@@ -44,8 +44,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		p[len1 + a] = s2[a];
 	}
-	
-	p[len1 + a] = '\0';	
+
+	p[len1 + a] = '\0';
 	return (p);
 }
-		
