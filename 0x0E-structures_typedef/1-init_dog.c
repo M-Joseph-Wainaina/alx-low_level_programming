@@ -2,7 +2,7 @@
 
 /**
  * init_dog - initialises a dogs detail
- * @d: pointer to new dogs details 
+ * @d: pointer to new dogs details
  * @name: dogs name
  * @age: dogs age
  * @owner: dogs owner
