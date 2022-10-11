@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print-dog - prints the dogs details
+ * print_dog - prints the dogs details
  * @d: stores dogs details
  */
 
@@ -20,7 +20,7 @@ void print_dog(struct dog *d)
 	{
 		d->owner = "(nil)";
 	}
-	
+
 	printf("Name: %s\n", d->name);
 	printf("Age: %f\n", d->age);
 	printf("Owner: %s\n", d->owner);
