@@ -5,7 +5,7 @@
  * @name: dogs name
  * @age: dogs age
  * @owner: dogs owner
- * return: struct pointer
+ * Return: struct pointer
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
