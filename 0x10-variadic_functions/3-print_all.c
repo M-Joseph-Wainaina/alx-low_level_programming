@@ -6,7 +6,7 @@ void print_an_integer(char *separator, va_list args);
 void print_a_float(char *separator, va_list args);
 /**
  * print_all - prints anything passed to it
- * @fmt: format of strings to be printed
+ * @format: format of strings to be printed
  */
 
 void print_all(const char * const format, ...)
