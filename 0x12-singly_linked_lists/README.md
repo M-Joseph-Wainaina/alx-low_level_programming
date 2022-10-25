@@ -13,21 +13,21 @@ Write a function that prints all the elements of a list_t list.
 * If str is NULL, print [0] (nil)
 * You are allowed to use printf
 
-	julien@ubuntu:~/0x12. Singly linked lists$ cat 0-main.c
-	#include <stdlib.h>```
-	#include <string.h>
-	#include <stdio.h>
-	#include "lists.h"
+``` julien@ubuntu:~/0x12. Singly linked lists$ cat 0-main.c
+#include <stdlib.h>```
+#include <string.h>
+#include <stdio.h>
+#include "lists.h"
 
-	/**
-	 * main - check the code
- 	*
-	 * Return: Always 0.
-	 */
-	int main(void)
-	{
-  	  list_t *head;
-	    list_t *new;
+/**
+ * main - check the code
+*
+ * Return: Always 0.
+ */
+int main(void)
+{
+   list_t *head;
+    list_t *new;
     list_t hello = {"World", 5, NULL};
     size_t n;
 
@@ -63,5 +63,5 @@ julien@ubuntu:~/0x12. Singly linked lists$ ./a
 [0] (nil)
 [5] World
 -> 2 elements
-julien@ubuntu:~/0x12. Singly linked lists$ 
+julien@ubuntu:~/0x12. Singly linked lists$ ```
 ## 
