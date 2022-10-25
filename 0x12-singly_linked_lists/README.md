@@ -13,101 +13,30 @@ Write a function that prints all the elements of a list_t list.
 * If str is NULL, print [0] (nil)
 * You are allowed to use printf
 
-``` julien@ubuntu:~/0x12. Singly linked lists$ cat 0-main.c
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
-#include "lists.h"
-
-/**
- * main - check the code
-*
- * Return: Always 0.
- */
-int main(void)
-{
-   list_t *head;
-    list_t *new;
-    list_t hello = {"World", 5, NULL};
-    size_t n;
-
-    head = &hello;
-    new = malloc(sizeof(list_t));
-    if (new == NULL)
-    {
-        printf("Error\n");
-        return (1);
-    }
-    new->str = strdup("Hello");
-    new->len = 5;
-    new->next = head;
-    head = new;
-    n = print_list(head);
-    printf("-> %lu elements\n", n);
-
-    printf("\n");
-    free(new->str);
-    new->str = NULL;
-    n = print_list(head);
-    printf("-> %lu elements\n", n);
-
-    free(new);
-    return (0);
-}
-julien@ubuntu:~/0x12. Singly linked lists$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-main.c 0-print_list.c -o a
-julien@ubuntu:~/0x12. Singly linked lists$ ./a 
-[5] Hello
-[5] World
--> 2 elements
-
-[0] (nil)
-[5] World
--> 2 elements
-julien@ubuntu:~/0x12. Singly linked lists$ ```
-
 
 ## 1-list_len.c 
 Write a function that returns the number of elements in a linked list_t list.
 
 Prototype: ``` size_t list_len(const list_t *h);```
 
-``` julien@ubuntu:~/0x12. Singly linked lists$ cat 1-main.c
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
-#include "lists.h"
 
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(void)
-{
-    list_t *head;
-    list_t *new;
-    list_t hello = {"World", 5, NULL};
-    size_t n;
+## 2-add_node.c
+Write a function that adds a new node at the beginning of a list_t list.
 
-    head = &hello;
-    new = malloc(sizeof(list_t));
-    if (new == NULL)
-    {
-        printf("Error\n");
-        return (1);
-    }
-    new->str = strdup("Hello");
-    new->len = 5;
-    new->next = head;
-    head = new;
-    n = list_len(head);
-    printf("-> %lu elements\n", n);
-    free(new->str);
-    free(new);
-    return (0);
-}
-julien@ubuntu:~/0x12. Singly linked lists$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c 1-list_len.c -o b
-julien@ubuntu:~/0x12. Singly linked lists$ ./b 
--> 2 elements
-julien@ubuntu:~/0x12. Singly linked lists$ ```
+Prototype: ``` list_t *add_node(list_t **head, const char *str);```
+* Return: the address of the new element, or NULL if it failed
+* str needs to be duplicated
+* You are allowed to use strdup
 
+##3-add_node_end.c 
+Write a function that adds a new node at the end of a list_t list.
+
+Prototype: list_t *add_node_end(list_t **head, const char *str);
+* Return: the address of the new element, or NULL if it failed
+* str needs to be duplicated
+* You are allowed to use strdup
+## 4-free_list.c
+
+Write a function that frees a list_t list.
+
+Prototype: ``` void free_list(list_t *head);```
