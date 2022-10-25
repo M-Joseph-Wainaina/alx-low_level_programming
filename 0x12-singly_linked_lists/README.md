@@ -14,7 +14,7 @@ Write a function that prints all the elements of a list_t list.
 * You are allowed to use printf
 
 ``` julien@ubuntu:~/0x12. Singly linked lists$ cat 0-main.c
-#include <stdlib.h>```
+#include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
 #include "lists.h"
