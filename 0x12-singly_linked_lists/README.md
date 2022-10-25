@@ -64,6 +64,8 @@ julien@ubuntu:~/0x12. Singly linked lists$ ./a
 [5] World
 -> 2 elements
 julien@ubuntu:~/0x12. Singly linked lists$ ```
+
+
 ## 1-list_len.c 
 Write a function that returns the number of elements in a linked list_t list.
 
