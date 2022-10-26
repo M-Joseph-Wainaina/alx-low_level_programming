@@ -16,9 +16,6 @@ list_t *add_node_end(list_t **head, const char *str)
 		temp = malloc(sizeof(list_t));
 		if (temp == NULL)
 			return (NULL);
-		temp_2 = malloc(sizeof(list_t));
-		if (temp_2 == NULL)
-			return (NULL);
 
 		temp->str = strdup(str);
 		temp->len = _strlen(str);
@@ -37,7 +34,7 @@ list_t *add_node_end(list_t **head, const char *str)
 			}
 			temp_2->next = temp;
 		}
-		return (temp);
+		return (*head);
 	}
 
 	return (0);
@@ -61,5 +58,3 @@ unsigned int _strlen(const char *str)
 
 	return (len);
 }
-
-
