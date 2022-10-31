@@ -49,18 +49,18 @@ Repo:
 
 GitHub repository: alx-low_level_programming
 Directory: 0x14-bit_manipulation
-File:``` 0-binary_to_uint.c```
+File: 0-binary_to_uint.c
 ```
   
-1. 1
-mandatory
+# 1. 1
 Write a function that prints the binary representation of a number.
 
-Prototype: void print_binary(unsigned long int n);
-Format: see example
-You are not allowed to use arrays
-You are not allowed to use malloc
-You are not allowed to use the % or / operators
+Prototype: ``` void print_binary(unsigned long int n);```
+* Format: see example
+* You are not allowed to use arrays
+* You are not allowed to use malloc
+* You are not allowed to use the % or / operators
+```
 julien@ubuntu:~/0x14. Binary$ cat 1-main.c 
 #include <stdio.h>
 #include "main.h"
@@ -97,14 +97,16 @@ Repo:
 GitHub repository: alx-low_level_programming
 Directory: 0x14-bit_manipulation
 File: 1-print_binary.c
-  
-2. 10
-mandatory
+```
+# 2. 10
+
 Write a function that returns the value of a bit at a given index.
 
-Prototype: int get_bit(unsigned long int n, unsigned int index);
-where index is the index, starting from 0 of the bit you want to get
-Returns: the value of the bit at index index or -1 if an error occured
+* Prototype: ```int get_bit(unsigned long int n, unsigned int index);```
+* where index is the index, starting from 0 of the bit you want to get
+* Returns: the value of the bit at index index or -1 if an error occured
+
+```
 julien@ubuntu:~/0x14. Binary$ cat 2-main.c
 #include <stdio.h>
 #include "main.h"
@@ -137,14 +139,17 @@ Repo:
 GitHub repository: alx-low_level_programming
 Directory: 0x14-bit_manipulation
 File: 2-get_bit.c
-  
-3. 11
-mandatory
+```
+
+# 3. 11
+
 Write a function that sets the value of a bit to 1 at a given index.
 
-Prototype: int set_bit(unsigned long int *n, unsigned int index);
-where index is the index, starting from 0 of the bit you want to set
-Returns: 1 if it worked, or -1 if an error occurred
+* Prototype: ```int set_bit(unsigned long int *n, unsigned int index);```
+* where index is the index, starting from 0 of the bit you want to set
+* Returns: 1 if it worked, or -1 if an error occurred
+
+```
 julien@ubuntu:~/0x14. Binary$ cat 3-main.c
 #include <stdio.h>
 #include "main.h"
@@ -180,14 +185,15 @@ Repo:
 GitHub repository: alx-low_level_programming
 Directory: 0x14-bit_manipulation
 File: 3-set_bit.c
-  
-4. 100
-mandatory
+```
+# 4. 100
+
 Write a function that sets the value of a bit to 0 at a given index.
 
-Prototype: int clear_bit(unsigned long int *n, unsigned int index);
-where index is the index, starting from 0 of the bit you want to set
-Returns: 1 if it worked, or -1 if an error occurred
+* Prototype: int clear_bit(unsigned long int *n, unsigned int index);
+* where index is the index, starting from 0 of the bit you want to set
+* Returns: 1 if it worked, or -1 if an error occurred
+```
 julien@ubuntu:~/0x14. Binary$ cat 4-main.c
 #include <stdio.h>
 #include "main.h"
@@ -223,13 +229,15 @@ Repo:
 GitHub repository: alx-low_level_programming
 Directory: 0x14-bit_manipulation
 File: 4-clear_bit.c
-  
-5. 101
-mandatory
+```
+
+# 5. 101
+
 Write a function that returns the number of bits you would need to flip to get from one number to another.
 
-Prototype: unsigned int flip_bits(unsigned long int n, unsigned long int m);
-You are not allowed to use the % or / operators
+* Prototype: unsigned int flip_bits(unsigned long int n, unsigned long int m);
+* You are not allowed to use the % or / operators
+```
 julien@ubuntu:~/0x14. Binary$ cat 5-main.c
 #include <stdio.h>
 #include "main.h"
@@ -265,4 +273,4 @@ Repo:
 GitHub repository: alx-low_level_programming
 Directory: 0x14-bit_manipulation
 File: 5-flip_bits.c
- 
+```
