@@ -12,7 +12,7 @@
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int idx;
-	hash_node_t *temp;
+	hash_node_t *temp = NULL, *elem = NULL;
 
 	if (ht == NULL || key == NULL || strcmp(key, "") == 0)
 	{
@@ -25,6 +25,14 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (temp == NULL)
 	{
 		return (0);
+	}
+	elem = ht->array[idx];
+
+	if (elem && strcmp(key, elem->key) == 0)
+	{
+		free(elem->value);
+		elem->value = strdup(value);
+		return (1);
 	}
 
 	temp->key = strdup(key);
