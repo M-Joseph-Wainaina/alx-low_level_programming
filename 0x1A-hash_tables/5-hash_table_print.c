@@ -22,16 +22,14 @@ void hash_table_print(const hash_table_t *ht)
 
 	strcat(str, "{");
 
-	for(idx = 0; idx < ht->size; idx++)
+	for (idx = 0; idx < ht->size; idx++)
 	{
 		elem = ht->array[idx];
 		if (elem == NULL)
 		{
 			continue;
 		}
-	
-		do 
-		{
+		do {
 			strcat(str, quote(elem->key));
 			strcat(str, ": ");
 			strcat(str, quote(elem->value));
@@ -46,6 +44,12 @@ void hash_table_print(const hash_table_t *ht)
 	printf("%s\n", str);
 }
 
+/**
+ * quote - return a pointer to a quoted string
+ * @str: string to be quoted
+ * Return: quoted string
+ */
+
 char *quote(char *str)
 {
 	char *ret;
@@ -56,9 +60,6 @@ char *quote(char *str)
 
 	strcat(ret, str);
 	strcat(ret, "'");
-	
+
 	return (ret);
 }
-	
-
-
