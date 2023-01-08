@@ -1,7 +1,7 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_get - function that retrieves 
+ * hash_table_get - function that retrieves
  * a value associated with a key
  *
  * @ht: the hash table
@@ -14,6 +14,11 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 {
 	unsigned long int idx;
 	hash_node_t *elem;
+
+	if (key == NULL || ht == NULL || strcmp(key, "") == 0)
+	{
+		return (NULL);
+	}
 
 	idx = key_index((unsigned char *)key, ht->size);
 
